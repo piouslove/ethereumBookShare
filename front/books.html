@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>以太坊图书分享平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/offcanvas.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">以太坊图书分享</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./books.html">图书分享信息 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./wallet.html">注册图书证件</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./orders.html">查询分享记录</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./txs.html">审批分享申请</a>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    
+
+    <main role="main" class="container">
+      <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+        <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+        <div class="lh-100">
+          <h4 class="mb-0 text-white lh-100">以太坊区块链图书分享信息</h4>
+        </div>
+      </div>
+
+    
+
+      <div class="my-3 p-3 bg-white rounded box-shadow" id="bookInfos">
+        <h6 class="border-bottom border-gray pb-2 mb-0"></h6>
+ 
+      </div>
+
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        
+
+<form>
+  <div class="form-group" id="fillOrder">
+    <label for="exampleFormControlInput1">图书编号</label>
+    <input type="text" class="form-control" id="index" placeholder="图书编号">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">证件信息</label>
+    <textarea class="form-control" id="info" rows="7"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">证件信息密码</label>
+    <input type="password" class="form-control" id="key" placeholder="证件信息密码">
+  </div>
+
+  <button type="button" class="btn btn-primary" onclick="requestBook()">提交借用图书请求</button>
+</form>
+
+ 
+      </div>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- This exposes the library as a global variable: ethers -->
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/holder.min.js"></script>
+    <script src="../js/offcanvas.js"></script>
+    <script src="../js/contract.js"></script>
+    <script src="../js/books.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>以太坊图书分享平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/offcanvas.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">以太坊图书分享</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./books.html">图书分享信息 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./wallet.html">注册图书证件</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./orders.html">查询分享记录</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./txs.html">审批分享申请</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="nav-scroller bg-white box-shadow">
+      <nav class="nav nav-underline">
+        <a class="nav-link active" href="#">快速导航</a>
+        
+        <a class="nav-link" href="#"> </a>
+        <a class="nav-link" href="#"> </a>
+        <a class="nav-link" href="#orders1">我的借用记录</a>
+        <a class="nav-link" href="#">  </a>
+        <a class="nav-link" href="#orders2">借出待审批记录</a>
+        <a class="nav-link" href="#orders3">借出已拒绝记录</a>
+        <a class="nav-link" href="#orders4">借出待归还记录</a>
+        <a class="nav-link" href="#orders5">借出已归还记录</a>
+      </nav>
+    </div>
+
+    <main role="main" class="container">
+      <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+        <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+        <div class="lh-100">
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-4" type="text" placeholder="请输入用户编号" aria-label="Search" id="userAddress">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="queryOrders()">查询</button>
+        </form>
+        </div>
+      </div>
+
+      <div class="my-3 p-3 bg-white rounded box-shadow"  id="orders1">
+        <h6 class="border-bottom border-gray pb-2 mb-0">我的借用记录</h6>
+        
+        
+
+      </div>
+
+      <div class="my-3 p-3 bg-white rounded box-shadow"  id="orders2">
+        <h6 class="border-bottom border-gray pb-2 mb-0">借出待审批记录</h6>
+        
+      </div>
+
+      <div class="my-3 p-3 bg-white rounded box-shadow"  id="orders3">
+        <h6 class="border-bottom border-gray pb-2 mb-0">借出已拒绝记录</h6>
+        
+      </div>
+
+      <div class="my-3 p-3 bg-white rounded box-shadow"  id="orders4">
+        <h6 class="border-bottom border-gray pb-2 mb-0">借出待归还记录</h6>
+        
+      </div>
+
+      <div class="my-3 p-3 bg-white rounded box-shadow"  id="orders5">
+        <h6 class="border-bottom border-gray pb-2 mb-0">借出已归还记录</h6>
+       
+      </div>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- This exposes the library as a global variable: ethers -->
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/holder.min.js"></script>
+    <script src="../js/offcanvas.js"></script>
+    <script src="../js/contract.js"></script>
+    <script src="../js/orders.js"></script>
+  </body>
+</html>
+
+
